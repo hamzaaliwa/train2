@@ -1,21 +1,21 @@
-package Services;
+package com.example.gestion_tickets.Services;
 
 
 
 
-import Entities.Films;
-import Entities.Ticket;
-import Repo.Ticketrepo;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+
+import com.example.gestion_tickets.Entities.Ticket;
+import com.example.gestion_tickets.Repo.Ticketrepo;
+import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@AllArgsConstructor
 @Service
-@RequiredArgsConstructor
-@Slf4j
+@Transactional
 public class Ticketservice {
 
     private final Ticketrepo ticketrepo;

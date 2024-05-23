@@ -1,9 +1,9 @@
-package Controllers;
+package com.example.gestion_tickets.Controllers;
 
 
-import Entities.Ticket;
-import Repo.Ticketrepo;
-import Services.Ticketservice;
+import com.example.gestion_tickets.Entities.Ticket;
+import com.example.gestion_tickets.Repo.Ticketrepo;
+import com.example.gestion_tickets.Services.Ticketservice;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @NoArgsConstructor
-@RequestMapping({"/filmss"})
+@RequestMapping({"/tickets"})
 @CrossOrigin("*")
 public class Ticketcontroller {
     private Ticket ticket;
